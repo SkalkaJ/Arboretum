@@ -1,0 +1,102 @@
+---
+type: poznámky
+tags:
+  - škola
+  - prakmed
+year: 2025
+created: 2025-09-27
+updated: 2025-09-27
+---
+# Statistika I, II a III
+- Statistika pomáhá odfiltrovat náhodné jevy a odhalit zákonitosti
+- #### Vlivy náhod na data
+	- Chyba malých čísel, kvůli malému množství vzorků
+	- jev může být překryt vlivy jiných, z hlediska studovaného jevu náhodných faktorů
+- #### Metody:
+	- Explorační = hledání vlastnosti a zákonitosti/ vlastnosti na vstupu a výstupu
+		- *Charakter polohy*
+			- Průměr = aritmetický, geometrický, harmonický
+			- Medián a kvantily
+			- Modus
+		- *Charakter variability*
+			- Rozsah = nepřesné kvůli odlehlým polohám
+			- Variance, rozptyl
+			- Směrodatná odchylka
+			- Variační koeficient
+			- Střední chyba průměru
+		- *Přehled grafů*
+			- Koláčový graf (zkreslující, nelze poznat kolikrát je co menší)
+			- Sloupcové grafy
+			- Krabicový graf
+			- *Houslový graf* = modernější, box plot, histogram
+			- Čárový graf =  vývoj v čase
+			- Histogram
+			- XY-graf = scatterplot
+			- XYZ-graf = třetí rozměr značený intenzitou barvy
+		- *Další metody*
+			- Shluková analýza
+			- Diskriminační analýza = kombinace proměnných na jejich základě lze rozpoznat příslušnost objektu do některé z předem známých skupin. *cross validizace* (leave-one-out metoda)
+			- Faktorová analýza = větší počet proměnných na menší počet faktorů (např. osobnostní dotazníky)
+	- Konfirmační = potvrzování/ vyvracování hypotézy. Vyvrácení nulové hypotézy
+		- *Nulová hypotéza* H$0$ - pozorovaný jev je dílem náhody, vyvráceno statisticky, zamítáno na hladině významnosti *p = 0,05*
+		- Alternativní hypotéza
+		- Síla testu = pravděpodobnost oprávněného zamítnutí nulové hypotézy
+		- P hodnota = pravděpodobnost, že podezřelá data vyjdou při platnosti nulové hypotézy
+		- Síla vzorku nezávisí na velikosti vzorku
+		- *Testování hypotéz*
+			- Hypotézy o poloze - T-test (pro 2 skupiny), ANOVA (pro více skupin)
+			- Hypotéza o rozptylu - F-test
+			- Hypotéza o rozložení - Chi2, Kolmogorov Smirnov
+			- Hypotéza o vychýlených hodnotách - test, jestli je možné, aby vychýlená hodnota taková byla
+			- **PŘIDAT TABULKU Z PREZENTACE**
+		- Hypotéza o poloze
+			- Proměnné
+				- Závislost
+					- Cílové (závislé)
+					- Vyrušující (nezávislé)
+					- Rušivé
+				- Druhy hodnot
+					- Kvantitativní
+					- Kvalitativní (nelze seřadit podle velikosti)
+				- Možné hodnoty
+					- Spojité
+					- Nespojité
+				- Řazení
+					- Kategoriální (nominální)
+					- Ordinální
+				- Binární data
+			- |Vysvětlující|Kategoriální|Spojité|
+				|---|---|---|
+				|Kategorální|Kontingenční tabulky|ANOVA, t-test|
+				|Spojité|Logistická regrese|Lineární regrese|
+				|Ordinální i spojité|Logistická regrese|ANCOVA|
+			- *Vztahy spojitých veličin*
+				- Regresní analýza
+					- Závislá a nezávislá proměnná
+					- Regresivní koeficient $\beta$ (směrnice přímky) a P (odráží pravděpodobnost, že $\beta$ =0)
+				- Korelační analýza
+					- Nelze říci, která proměnná je závislá, obě jsou navíc zatíženy chybou
+					- Koeficient determinace (těsnost vztahu)
+					- V biologii především korelační analýza
+				- Význam regresního a korelačního koeficientu
+					- Stejná směrnice (stejný regresní koeficient), ale špatně rozložený data rozházený do zubů (menší korelační koeficient)
+				- Neparametrické metody
+					- Když jsou vady v datech
+						- Není normální rozdělení (U ZÁVISLÉ) 
+						- Wilcoxonův (=Mann-Whitney) test
+						- Mediánový (=znaménkový) test
+						- Kruskal-Wallis test
+						- A další
+				- Randomizační a Monte Carlo metody
+					- nepočítá se, skutečně se to ozkouší
+- #### Rady
+	- Jsou potřeba kvalitní data
+	- Na statistiku se musí myslet včas, před začátkem sběru dat
+	- Transformace dat
+		- Logaritmizace (i dvakrát)
+		- Odmocnení, arcsin,...
+		- Musí se uvést v metodice
+	- Méně testů (skoro vždy) více - jinak se musí dělat korekce
+	- Jednostranný test je 2x citlivější, než dvoustranný
+	- Pozor na rozdíl mezi základním a výběrovým souborem - jednovýběrové a vícevýběrové testy
+	- Pozor při analýze již publikovaných dat
